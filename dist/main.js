@@ -301,6 +301,42 @@ exports.default = function (_ref) {
             'span',
             { style: { fontSize: 20, fontWeight: 'bold' } },
             moduleName
+          ),
+          _react2.default.createElement(
+            'span',
+            { style: { fontSize: 14 } },
+            '\xA0\xA0\xA0',
+            _react2.default.createElement(
+              'a',
+              {
+                'class': 'link selected',
+                href: 'https://github.com/angus-c/just#' + moduleName
+              },
+              'API'
+            )
+          ),
+          ', ',
+          _react2.default.createElement(
+            'span',
+            { style: { fontSize: 14 } },
+            _react2.default.createElement(
+              'a',
+              {
+                'class': 'link selected',
+                href: 'https://www.npmjs.com/package/' + moduleName
+              },
+              'NPM'
+            )
+          ),
+          ''
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'span',
+            { style: { fontFamily: 'consolas' } },
+            'npm install ' + moduleName
           )
         ),
         _react2.default.createElement(
@@ -309,20 +345,15 @@ exports.default = function (_ref) {
           _react2.default.createElement(
             'span',
             { style: { fontFamily: 'consolas' } },
-            'npm install',
-            ' ',
-            _react2.default.createElement(
-              'a',
-              {
-                'class': 'link selected',
-                href: 'https://www.npmjs.com/package/' + moduleName
-              },
-              moduleName
-            )
+            'yarn add ' + moduleName
           )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(_Evaluate2.default, { script: script })
         )
-      ),
-      _react2.default.createElement(_Evaluate2.default, { script: script })
+      )
     )
   );
 };
